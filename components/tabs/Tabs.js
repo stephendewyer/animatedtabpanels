@@ -11,12 +11,14 @@ const Tabs = ({ tabPanels }) => {
         setActiveTab(newActiveTab);
     }
 
-    const [height, setHeight] = useState("0px");
-
     const content = useRef(null);
 
+    const [height, setHeight] = useState('0px');
+
     useEffect(() => {
+        
         setHeight(height = content.current.scrollHeight) 
+        console.log('height: ', content.current.scrollHeight)
     });  
 
     return (
