@@ -104,7 +104,7 @@ export default function Index() {
       <Head>
         <title>animated tab panels</title>
         <meta name="description" content="accessible, dynamic, responsive and variable height animated tab panels by stephen garrett dewyer" />
-        <meta property="og:image" content="/images/tab_02_image.jpg" />
+        <meta property="og:image" content="/images/tab_02_image.JPG" />
         <meta property="og:url" content="https://animatedtabpanels.vercel.app/" />
       </Head>
       <div className={styles.container} role="main">
