@@ -5,10 +5,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Index.module.css';
 import { v4 as uuidv4 } from 'uuid';
-import AfterDream from '../public/images/tab_01_image.jpg';
-import TumblingBlocksQuilt from '../public/images/tab_02_image.jpg';
-import Buffet from '../public/images/tab_03_image.jpg';
-import OliveTrees from '../public/images/tab_04_image.jpg';
+import AfterDream from '../public/images/tab_01_image.JPG';
+import TumblingBlocksQuilt from '../public/images/tab_02_image.JPG';
+import Buffet from '../public/images/tab_03_image.JPG';
+import OliveTrees from '../public/images/tab_04_image.JPG';
 
 export default function Index() {
 
