@@ -1,3 +1,5 @@
+/* important!!!  The font-family used can cause paragraphs to overflow the element where height = scrollHeight if font-size is smaller than the ascent and descent of the font */
+
 html,
 body {
   padding: 0;

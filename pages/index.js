@@ -50,9 +50,6 @@ export default function Index() {
                 Minneapolis Institute of Art
               </div>
             </div>
-            <p className={styles.panelParagraphs}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Ut placerat orci nulla pellentesque dignissim enim sit amet. Quis blandit turpis cursus in hac. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Vitae justo eget magna fermentum. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Eget arcu dictum varius duis at consectetur lorem donec. Molestie ac feugiat sed lectus vestibulum mattis. Mattis rhoncus urna neque viverra justo nec ultrices. Tempor orci eu lobortis elementum nibh. Dui vivamus arcu felis bibendum ut tristique et egestas quis. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Amet mauris commodo quis imperdiet massa tincidunt nunc. Mi quis hendrerit dolor magna eget. Et tortor at risus viverra adipiscing at in.
-            </p>
           </div>,
     },
     {
@@ -66,7 +63,7 @@ export default function Index() {
               </div>
               <div className={styles.bannerParagraph}>
                 Louis Majorelle<br />
-                `&quot;`Chicor&eacute;e`&quot;` style buffet<br />
+                &quot;Chicor&eacute;e&quot; style buffet<br />
                 c. 1902<br />
                 Minneapolis Institute of Art
               </div>
@@ -92,9 +89,6 @@ export default function Index() {
                 Minneapolis Institute of Art
               </div>
             </div>
-            <p className={styles.panelParagraphs}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Fames ac turpis egestas maecenas pharetra convallis posuere. Augue mauris augue neque gravida in. Vel pretium lectus quam id. Turpis cursus in hac habitasse platea. Duis convallis convallis tellus id interdum velit laoreet id. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Libero enim sed faucibus turpis in eu mi bibendum. Nisl nisi scelerisque eu ultrices. Blandit massa enim nec dui nunc mattis enim ut. Sit amet luctus venenatis lectus.
-            </p>
           </div>,
     },
   ];
