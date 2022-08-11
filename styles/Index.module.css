@@ -72,6 +72,14 @@
   max-width: 900px;
 }
 
+.credits {
+  font-size: 24px;
+  max-width: 300px;
+  margin: 20px auto;
+  color: #838B6A;
+  text-align: center;
+}
+
 @media screen and (max-width: 751px) {
 
   .container {
@@ -120,6 +128,13 @@
 
   .panelParagraphs {
     padding: 15px;
+  }
+
+  .credits {
+    width: 90%;  
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
   }
 
 }

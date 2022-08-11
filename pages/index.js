@@ -111,7 +111,15 @@ export default function Index() {
           <div className={styles.bullet_list}>
             <ul className={styles.heading_03}>
               <li>
-                responsive
+                responsive including:
+                <ul>
+                  <li>
+                    synchronous rendering of the panel height on window size changes
+                  </li>
+                  <li>
+                    asynchronous rendering of the panel height on tab changes
+                  </li>
+                </ul>
               </li>
               <li>
                 variable height
@@ -120,7 +128,7 @@ export default function Index() {
                 accessible following WCAG 2.1 standards
               </li>
               <li>
-                dynamic
+                dynamic (can fetch data from a database for panel content)
               </li>
               <li>
                 animated
@@ -128,7 +136,7 @@ export default function Index() {
             </ul>  
           </div>
         <Tabs tabPanels={tabPanels} />
-        <h2 className={styles.heading_02} >
+        <h2 className={styles.credits} >
             designed and developed by <Link href="https://www.stephendewyerwebwork.com" passHref={true} target="_blank" aria-label="link to portfolio website of stephen garrett dewyer">stephen garrett dewyer</Link>
         </h2>
       </div>
