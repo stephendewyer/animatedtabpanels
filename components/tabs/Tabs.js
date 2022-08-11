@@ -82,9 +82,7 @@ const Tabs = ({ tabPanels }) => {
 
     }, [node]);
 
-    
-
-    console.log('height: ', height)
+    // console.log('height: ', height)
     
     return (
         

@@ -122,13 +122,10 @@ export default function Index() {
                 </ul>
               </li>
               <li>
-                variable height
-              </li>
-              <li>
                 accessible following WCAG 2.1 standards
               </li>
               <li>
-                dynamic (can fetch data from a database for panel content)
+                dynamic, allowing for possible data fetching from a database in panels
               </li>
               <li>
                 animated
