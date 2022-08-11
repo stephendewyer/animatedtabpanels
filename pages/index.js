@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Index.module.css';
 import { v4 as uuidv4 } from 'uuid';
+import ExternalLinkButton from '../components/external_link_button/ButtonExternalLink';
+import ExternalLinkIcon from '../public/images/icons/external_link_icon.svg';
 import AfterDream from '../public/images/tab_01_image.JPG';
 import TumblingBlocksQuilt from '../public/images/tab_02_image.JPG';
 import Buffet from '../public/images/tab_03_image.JPG';
@@ -50,6 +52,9 @@ export default function Index() {
                 Minneapolis Institute of Art
               </div>
             </div>
+            <p className={styles.panelParagraphs}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nulla nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </p>
           </div>,
     },
     {
@@ -89,6 +94,9 @@ export default function Index() {
                 Minneapolis Institute of Art
               </div>
             </div>
+            <p className={styles.panelParagraphs}>
+              Lorem ipsum dolor sit amet.
+            </p>
           </div>,
     },
   ];
@@ -105,33 +113,53 @@ export default function Index() {
           <h1 className={styles.heading_01}>
             animated tab panels
           </h1>
-          <h2 className={styles.heading_02} >
-            features:
-          </h2>
-          <div className={styles.bullet_list}>
-            <ul className={styles.heading_03}>
-              <li>
-                responsive including:
-                <ul>
-                  <li>
-                    synchronous rendering of the panel height on window size changes
-                  </li>
-                  <li>
-                    asynchronous rendering of the panel height on tab changes
-                  </li>
-                </ul>
-              </li>
-              <li>
-                accessible following WCAG 2.1 standards
-              </li>
-              <li>
-                dynamic, allowing for possible data fetching from a database in panels
-              </li>
-              <li>
-                animated
-              </li>
-            </ul>  
+          <div className={styles.about_section}>
+            <div className={styles.features}>
+              <h2 className={styles.heading_02} >
+                features:
+              </h2>
+              <ul className={styles.heading_03}>
+                <li>
+                  responsive including:
+                  <ul>
+                    <li>
+                      synchronous rendering of the panel height on window size changes
+                    </li>
+                    <li>
+                      asynchronous rendering of the panel height on tab changes
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  accessible following WCAG 2.1 standards
+                </li>
+                <li>
+                  dynamic, allowing for possible data fetching from a database in panels
+                </li>
+                <li>
+                  animated
+                </li>
+              </ul>  
+            </div>
+            <div className={styles.link_to_code}>
+              <h2 className={styles.heading_02} >
+                code:
+              </h2>
+              <Link href="https://github.com/stephendewyer/animatedtabpanels/" passHref={true} aria-label="link to animated tab panels on GitHub">
+                <a target="_blank" rel="noopener noreferrer">
+                  <ExternalLinkButton>
+                    <div>
+                      GitHub
+                    </div> 
+                    <div className={styles.external_link_icon} >
+                      <Image src={ExternalLinkIcon} layout="responsive" alt="external link icon"/>
+                    </div>
+                  </ExternalLinkButton>
+                </a>
+              </Link>
+            </div>
           </div>
+          
         <Tabs tabPanels={tabPanels} />
         <h2 className={styles.credits} >
             designed and developed by <Link href="https://www.stephendewyerwebwork.com" passHref={true} target="_blank" aria-label="link to portfolio website of stephen garrett dewyer">stephen garrett dewyer</Link>
