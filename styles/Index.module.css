@@ -46,9 +46,7 @@
 
 .panelContent {
   padding: 40px 0;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .banner {
@@ -58,16 +56,19 @@
   justify-content: center;
 }
 
+.bannerLeft {
+  width: 20%;
+}
+
 .bannerImage {
   max-width: 800px;
   padding: 0 20px;
-  width: 75%
+  width: 60%
 }
 
 .bannerParagraph {
-  width: 25%;
+  width: 20%;
   padding: 0 20px;
-  max-width: 200px;
 }
 
 .italic {
@@ -75,13 +76,11 @@
 }
 
 .panelParagraphs {
-  width: 100%;
-  padding: 20px 0 0 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 900px;
+  width: 60%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .credits {
@@ -144,6 +143,10 @@
 
   .banner {
     flex-direction: column;
+  }
+
+  .bannerLeft {
+    display: none;
   }
 
   .bannerImage {

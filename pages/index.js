@@ -21,6 +21,7 @@ export default function Index() {
         content:
           <div className={styles.panelContent}>
             <div className={styles.banner}>
+              <div className={styles.bannerLeft}></div>
               <div className={styles.bannerImage}>
                 <Image src={AfterDream} layout="responsive" alt="photograph of After Dream, 1997/2009, by Pierre Huyghe"/>
               </div>
@@ -42,6 +43,7 @@ export default function Index() {
         content:
           <div className={styles.panelContent}>
             <div className={styles.banner}>
+            <div className={styles.bannerLeft}></div>
               <div className={styles.bannerImage}>
                 <Image src={TumblingBlocksQuilt} layout="responsive" alt="photograph of Tumbling Blocks quilt, c. 1881-1916, by Irene Nestell Hart"/>
               </div>
@@ -63,6 +65,7 @@ export default function Index() {
         content: 
           <div className={styles.panelContent}>
             <div className={styles.banner}>
+              <div className={styles.bannerLeft}></div>
               <div className={styles.bannerImage}>
                 <Image src={Buffet} layout="responsive" alt='photograph of Chicor&eacute;e style buffet, c. 1902, Louis Majorelle'/>
               </div>
@@ -84,6 +87,7 @@ export default function Index() {
         content: 
           <div className={styles.panelContent}>
             <div className={styles.banner}>
+            <div className={styles.bannerLeft}></div>
               <div className={styles.bannerImage}>
                 <Image src={OliveTrees} layout="responsive" alt="photograph of Olive Trees, 1889, by Vincent Van Gogh"/>
               </div>
