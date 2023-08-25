@@ -1,0 +1,53 @@
+/* important!!!  Some font families can cause paragraphs to overflow the element where height = scrollHeight if font-size is smaller than the ascent and descent of the font */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: IBM-Plex-Sans;
+  color: #36261E;
+  background-color:#FFECEC;
+  font-size: 24px;
+}
+
+@font-face {
+  font-family: "IBM-Plex-Sans";
+  src: url(/fonts/IBM-Plex-Sans/IBMPlexSans-Medium.ttf);
+}
+
+dd {
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  color: #838B6A;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #79A5D8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D89679;
+  text-decoration: none;
+}
+
+a:active {
+  color: #838B6A;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 751px) {
+
+  body {
+    font-size: 18px;
+  }
+
+}
