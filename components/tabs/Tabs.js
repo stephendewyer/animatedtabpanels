@@ -92,7 +92,7 @@ const Tabs = ({ tabPanels }) => {
             <li 
                 className={styles.tabs}
             >
-                {tabPanels.map((tab) => {
+                {tabPanels.map((tab, index) => {
                     const label = tab.label;
                     const id = tab.id;
                     return (
@@ -100,6 +100,11 @@ const Tabs = ({ tabPanels }) => {
                             className={label == activeTab ? styles.current : "" } 
                             key={id}
                             onClick={(e) => handleClick(e, label)}
+                            id={`tabpanel_header_${index}`}
+                            role="tab"
+                            aria-selected={label == activeTab ? true : false}
+                            aria-controls={`${index}_tabpanel`}
+                            tabIndex={-index}
                         >
                             <a href="#">{label}</a>
                         </dt>
@@ -111,7 +116,7 @@ const Tabs = ({ tabPanels }) => {
                 style={{ 'height': `${height}px` }}
             >
                 <TransitionGroup >
-                    {tabPanels.map((panelItem) => {
+                    {tabPanels.map((panelItem, index) => {
                         // if panel is the same as the activeTab, load showPanelContent as true
                         const panelItemId = panelItem.id;
                         const panelItemContent = panelItem.content;
@@ -132,6 +137,10 @@ const Tabs = ({ tabPanels }) => {
                                 >
                                     <dd 
                                         ref={panelItemContentContainer}
+                                        id={`${index}_tabpanel`}
+                                        role="tabpanel"
+                                        tabIndex={-index}
+                                        aria-labelledby={`tabpanel_header_${index}`}
                                     >
                                         <div
                                             ref={measuredRef}
